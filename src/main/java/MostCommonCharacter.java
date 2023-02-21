@@ -22,6 +22,7 @@ public class MostCommonCharacter {
         for(Map.Entry<Character, Integer> entry : counter.entrySet()) {
             if(entry.getValue()>maxOccur) {
                 max = entry.getKey();
+                maxOccur = entry.getValue();
             }
         }
         return max;
